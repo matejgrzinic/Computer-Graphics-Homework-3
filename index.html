@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>   
+    #c{
+        float:right;        
+        position: absolute;
+        left: 930px;
+        top: 50px;
+    }
+</style>
+
+<canvas id="myCanvas" width="800" height="800" style="border: 1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<div id="c">
+<input type="checkbox" id="showquadtree" position="align"> show quad tree
+<p id ="objects" >current objects: </p>
+<p id ="quadtree" >quadtree check: </p>
+<p id ="bruteforce" >bruteforce check:</p>
+<p id ="ratio" ></p>
+<p id ="splitLimit" ></p>
+<input type="number" id="enterObjects"  style="width: 7em" min="0" value="0">
+<button type="button" id="add">Add</button>
+</div>
+
+<script src="quadtree.js"></script>
+<script src="square.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
